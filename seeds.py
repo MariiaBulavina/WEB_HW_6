@@ -1,10 +1,11 @@
 from datetime import datetime, date, timedelta
 
+from pprint import pprint
 from random import randint
 import sqlite3
-from pprint import pprint
 
 from faker import Faker
+
 
 disciplines = [
     'Вища математика',
@@ -73,6 +74,7 @@ def seed_grades():
 
 
 if __name__ == '__main__':
+    
     try:
         seed_teachers()
         seed_disciplines()
